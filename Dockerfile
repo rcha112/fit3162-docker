@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update -y
 
 # Node
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs
 # Python
 RUN apt-get install -y python3 python3-pip
 # R
