@@ -1,14 +1,9 @@
-FROM ubuntu:latest
+FROM node:latest
 MAINTAINER rcha112
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update -y
 RUN apt-get upgrade -y
-
-# Node
-RUN apt-get install -y nodejs
-RUN apt-get install -y npm
-RUN npm install -g yarn
 
 # Python
 RUN apt-get install -y python3 python3-pip
